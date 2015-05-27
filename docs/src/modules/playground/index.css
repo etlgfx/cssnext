@@ -1,5 +1,6 @@
 .cssnext-Playground {
   flex: 1;
+  display: flex;
   position: relative;
   font-family: Menlo, Consolas, Monaco, monospace;
   color: color(var(--cssnext-Color-blue) b(+20%));
@@ -39,9 +40,9 @@
 
 
   .cssnext-Playground-section {
-    height: 100%;
-    width: 50%;
-    float: left;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 
     .cssnext-Playground-section--from {
@@ -55,8 +56,7 @@
   .cssnext-Playground-code {
     box-sizing: border-box;
 
-    width: 100%;
-    height: 100%;
+    flex: 1;
     border: 0;
     margin: 0;
     padding: 0;
