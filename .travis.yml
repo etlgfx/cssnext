@@ -14,3 +14,7 @@ notifications:
     on_failure: always
     use_notice: true
     skip_join: true
+
+script:
+  - npm run test
+  - npm run docs-test
